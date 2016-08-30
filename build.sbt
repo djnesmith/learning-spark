@@ -15,13 +15,13 @@ seq(sbtprotobuf.ProtobufPlugin.protobufSettings: _*)
 
 // additional libraries
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "1.1.1" % "provided",
-  "org.apache.spark" %% "spark-sql" % "1.1.1" % "provided",
-  "org.apache.spark" %% "spark-hive" % "1.1.1" % "provided",
-  "org.apache.spark" %% "spark-streaming" % "1.1.1",
-  "org.apache.spark" %% "spark-streaming-kafka" % "1.1.1",
-  "org.apache.spark" %% "spark-streaming-flume" % "1.1.1",
-  "org.apache.spark" %% "spark-mllib" % "1.1.1",
+  "org.apache.spark" %% "spark-core" % "1.3.1" % "provided",
+  "org.apache.spark" %% "spark-sql" % "1.3.1",
+  "org.apache.spark" %% "spark-hive" % "1.3.1",
+  "org.apache.spark" %% "spark-streaming" % "1.3.1",
+  "org.apache.spark" %% "spark-streaming-kafka" % "1.3.1",
+  "org.apache.spark" %% "spark-streaming-flume" % "1.3.1",
+  "org.apache.spark" %% "spark-mllib" % "1.3.1",
   "org.apache.commons" % "commons-lang3" % "3.0",
   "org.eclipse.jetty"  % "jetty-client" % "8.1.14.v20131031",
   "com.typesafe.play" % "play-json_2.10" % "2.2.1",
@@ -36,7 +36,8 @@ libraryDependencies ++= Seq(
   "com.datastax.spark" %% "spark-cassandra-connector" % "1.0.0-rc5",
   "com.datastax.spark" %% "spark-cassandra-connector-java" % "1.0.0-rc5",
   "com.github.scopt" %% "scopt" % "3.2.0",
-  "org.scalatest" %% "scalatest" % "2.2.1" % "test"
+  "org.scalatest" %% "scalatest" % "2.2.1" % "test",
+  "com.holdenkarau" %% "spark-testing-base" % "0.0.1" % "test"
 )
 
 resolvers ++= Seq(
